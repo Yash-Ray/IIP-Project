@@ -86,3 +86,33 @@ box-shadow: inset 6px 6px 12px #afafaf,
 #prev-btn {
     display: none;
 }
+#submit-btn {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 10px 0px;
+  background: #e0e0e0;
+  border: none;
+  padding: 10px;
+  font-weight: 900;
+  border-radius: 20px;
+  height: fit-content;
+  min-height: 40px;
+  width: fit-content;
+  box-shadow:  9px 9px 17px #a4a4a4,
+              -9px -9px 17px #ffffff;
+  color: rgb(253, 24, 70);
+  font-size: 16px;
+}
+button:focus {
+  outline: none !important;
+}
+.activebtn {
+  background: #e0e0e0;
+  box-shadow: inset 9px 9px 18px #a4a4a4,
+              inset -9px -9px 18px #ffffff;
+  color: purple;
+}

@@ -95,7 +95,7 @@
               <div class="carousel-item">
                 <div class="content">
                   <div class="question">
-                    Now let's begin with the Survey Section.
+                    Now let's begin with the Survey.
                   </div>
                 </div>
               </div>
@@ -241,6 +241,9 @@
                       placeholder="Enter Your Answer here"
                     />
                   </div>
+                  <div id="submit-btn">
+                    <button type="submit">Submit Response!</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -296,5 +299,19 @@
         pos = arr[--count % 14];
       }
     </script>
+    <script>
+      const buttons = Array.from(document.querySelectorAll("button"));
+
+      buttons.forEach(btn => {
+          btn.addEventListener("click", () => {
+          btn.classList.add("activebtn");
+          btn.classList.remove("normal")
+          setTimeout(function() {
+              btn.classList.remove("activebtn");
+          }, 200)
+          console.log("hello");
+      });
+  });
+  </script>
   </body>
 </html>
